@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "playerId": {
+      "type": "integer"
+    },
+    "action": {
+      "type": "string"
+    },
+    "points": {
+      "type": "integer"
+    },
+    "timestamp": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "playerId",
+    "action",
+    "points",
+    "timestamp"
+  ]
+}
