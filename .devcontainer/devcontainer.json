@@ -4,6 +4,9 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
+  "runArgs": [
+    "--network=local-dev-network"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [

@@ -13,9 +13,7 @@ public class PlayerActionEvent {
     @JsonProperty("action")
     private String action;
     
-    @NotNull(message = "points is required")
-    @JsonProperty("points")
-    private int points;
+
     
     @NotNull(message = "timestamp is required")
     @JsonProperty("timestamp")
@@ -28,7 +26,6 @@ public class PlayerActionEvent {
     public PlayerActionEvent(int playerId, String action, int points, long timestamp) {
         this.playerId = playerId;
         this.action = action;
-        this.points = points;
         this.timestamp = timestamp;
     }
     
@@ -47,14 +44,6 @@ public class PlayerActionEvent {
     
     public void setAction(String action) {
         this.action = action;
-    }
-    
-    public int getPoints() {
-        return points;
-    }
-    
-    public void setPoints(int points) {
-        this.points = points;
     }
     
     public long getTimestamp() {
